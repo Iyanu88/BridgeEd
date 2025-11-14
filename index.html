@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BridgeEd - Inclusive Learning for Every Student</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body class="text-gray-900">
+
+    <!-- Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-indigo-600">BridgeEd</div>
+            <nav class="hidden md:flex space-x-6 text-gray-600 font-medium">
+                <a href="#features" class="hover:text-indigo-600 transition">Features</a>
+                <a href="#value" class="hover:text-indigo-600 transition">Why Us?</a>
+                <a href="#testimonials" class="hover:text-indigo-600 transition">Impact</a>
+                <a href="#cta-final" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition">Join Today</a>
+            </nav>
+            <button class="md:hidden text-gray-600 text-2xl" aria-label="Menu">&#9776;</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-16 md:py-24 rounded-b-3xl shadow-xl">
+        <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10 flex flex-col md:flex-row items-center gap-10">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
+                    Inclusive Learning for Every Student
+                </h1>
+                <p class="text-xl sm:text-2xl font-light mb-8 opacity-90">
+                    BridgeEd helps all students — including those with disabilities and language differences — learn smarter, stay organized, and connect through AI-powered support.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#" class="cta-button primary">Get Started</a>
+                    <a href="#features" class="cta-button secondary" id="explore-features-btn">Explore Features</a>
+                </div>
+            </div>
+
+            <div class="md:w-1/2 w-full flex justify-center">
+                <div class="bg-white p-8 rounded-2xl shadow-2xl w-full max-w-md h-64 flex items-center justify-center text-gray-700 font-medium text-lg border-4 border-teal-400">
+                    <!-- Placeholder for image -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-16 md:py-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-indigo-700">Simple, Powerful Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="feature-card">
+                    <div class="text-4xl mb-4 text-teal-500">&#x1F9E0;</div>
+                    <h3 class="font-bold text-xl mb-2">AI Study Assistant</h3>
+                    <p>Create quizzes, set reminders, and plan your study time easily.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="text-4xl mb-4 text-indigo-500">&#x267F;</div>
+                    <h3 class="font-bold text-xl mb-2">Accessible for Everyone</h3>
+                    <p>Learn with voice narration, captions, and visual alerts.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="text-4xl mb-4 text-yellow-500">&#x1F4AC;</div>
+                    <h3 class="font-bold text-xl mb-2">Multilingual Learning</h3>
+                    <p>Connect and study in your preferred language.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="text-4xl mb-4 text-red-500">&#x1F4C8;</div>
+                    <h3 class="font-bold text-xl mb-2">Track Your Progress</h3>
+                    <p>See how you’re improving every week.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us -->
+    <section id="value" class="py-16 md:py-24 bg-white px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-indigo-700">Why BridgeEd is the Future of Education</h2>
+            <p class="text-lg max-w-3xl mx-auto mb-12 text-gray-700">
+                Many students struggle because learning tools aren’t made for everyone. BridgeEd changes that — combining intelligent study tools and inclusive design to make education fair, fun, and accessible to all.
+            </p>
+            <div class="max-w-4xl mx-auto border border-gray-200 rounded-xl overflow-hidden shadow-lg">
+                <div class="grid grid-cols-2 text-white font-semibold text-xl bg-gray-800">
+                    <div class="p-4 border-r border-gray-700">Traditional Apps</div>
+                    <div class="p-4 bg-teal-500">BridgeEd</div>
+                </div>
+                <div class="comparison-row">
+                    <div>Focus only on content</div>
+                    <div class="text-teal-600 font-medium">Focus on students’ needs</div>
+                </div>
+                <div class="comparison-row bg-gray-50">
+                    <div>One-size-fits-all</div>
+                    <div class="text-teal-600 font-medium">Personalized and adaptive</div>
+                </div>
+                <div class="comparison-row">
+                    <div>Excludes disabled learners</div>
+                    <div class="text-teal-600 font-medium">100% inclusive</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 md:py-24 bg-indigo-50 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-indigo-700">Hear From Our Community</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="p-8 bg-white rounded-xl shadow-lg border-t-4 border-teal-500">
+                    <div class="text-4xl mb-4 text-gray-300">"</div>
+                    <p class="text-xl italic mb-6 text-gray-700">
+                        “BridgeEd has helped me stay organized and confident even with my hearing challenge. It's the first study tool that truly feels like it was designed for me.”
+                    </p>
+                    <p class="font-bold text-indigo-600">— Amara, Secondary Student</p>
+                </div>
+                <div class="p-8 bg-white rounded-xl shadow-lg border-t-4 border-indigo-500">
+                    <div class="text-4xl mb-4 text-gray-300">"</div>
+                    <p class="text-xl italic mb-6 text-gray-700">
+                        “Finally, a learning app my visually impaired students can use independently. The accessibility features are seamless and reduce so much burden on me.”
+                    </p>
+                    <p class="font-bold text-indigo-600">— Mr. Ade, Teacher</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta-final" class="cta-bg py-16 md:py-24 px-6 text-gray-900 rounded-t-3xl shadow-2xl">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl sm:text-5xl font-extrabold mb-6">
+                Ready to make learning more inclusive and intelligent?
+            </h2>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#" class="cta-button primary-dark">Join BridgeEd Today</a>
+                <a href="#value" class="cta-button secondary-dark">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div>
+                <div class="text-2xl font-bold text-teal-400 mb-2">BridgeEd</div>
+                <p class="text-sm text-gray-400">Education that connects everyone.</p>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-3 text-gray-200">Company</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-teal-400 transition">About</a></li>
+                    <li><a href="#" class="hover:text-teal-400 transition">Contact</a></li>
+                    <li><a href="#" class="hover:text-teal-400 transition">Support</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-3 text-gray-200">Product</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#features" class="hover:text-teal-400 transition">Features</a></li>
+                    <li><a href="#" class="hover:text-teal-400 transition">Accessibility</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-semibold mb-3 text-gray-200">Connect</h4>
+                <div class="flex space-x-4 text-2xl">
+                    <a href="#" class="hover:text-teal-400 transition">&#x1F44D;</a>
+                    <a href="#" class="hover:text-teal-400 transition">&#x1F4F8;</a>
+                    <a href="#" class="hover:text-teal-400 transition">&#x1F4BC;</a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-gray-700 text-center text-sm text-gray-500">
+            &copy; 2025 BridgeEd. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
