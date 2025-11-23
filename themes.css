@@ -1,0 +1,108 @@
+/* ============================
+   GLOBAL BLUE + BLACK + YELLOW THEME
+   ============================ */
+
+* {
+    transition: 0.25s ease-in-out;
+    font-family: "Inter", sans-serif;
+}
+
+/* Background */
+body {
+    background: #000000;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    background: rgba(10, 30, 80, 0.7); /* deep blue glass */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Nav Links */
+.nav-link {
+    color: white;
+}
+.nav-link:hover {
+    color: #FFD93B; /* bright yellow */
+}
+
+/* CTA Buttons */
+.cta-button {
+    border-radius: 12px;
+}
+
+/* Primary – BLUE */
+.cta-button.primary {
+    background: #4DA3FF;   /* light blue */
+    color: #000;
+}
+.cta-button.primary:hover {
+    background: #1E7BEA; /* stronger blue */
+}
+
+/* Secondary – YELLOW BORDER */
+.cta-button.secondary {
+    border: 2px solid #FFD93B; /* yellow */
+    color: #FFD93B;
+}
+.cta-button.secondary:hover {
+    background: #FFD93B;
+    color: #000;
+}
+
+/* Feature Cards */
+.feature-card {
+    background: #0A0A0A;
+    border: 1px solid #1E7BEA; /* blue border */
+    color: white;
+}
+.feature-card:hover {
+    transform: translateY(-4px);
+    border-color: #FFD93B; /* yellow hover */
+}
+
+/* Fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Input Fields */
+.input-field {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.input-field:focus {
+    border-color: #4DA3FF; /* blue outline */
+}
+
+/* Small Cards */
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+}
+.card:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* High Contrast Mode */
+.high-contrast body {
+    background: white;
+    color: black;
+}
+.high-contrast nav {
+    background: white;
+    border-bottom: 2px solid black;
+}
+.high-contrast .nav-link {
+    color: black;
+}
+.high-contrast .nav-link:hover {
+    color: #FFD93B; /* yellow */
+}

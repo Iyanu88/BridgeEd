@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BridgeEd — Landing + App</title>
+
+  <!-- Tailwind CDN for utilities -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Google Font (Inter) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Your custom component/theme styles -->
+  <link rel="stylesheet" href="css/themes.css" />
+</head>
+<body class="bg-slate-900 text-white font-sans">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-slate-900/70 backdrop-blur-md border-b border-white/6">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
+          <!-- simple logo text -->
+          <span class="font-bold text-lg">BE</span>
+        </div>
+        <span class="text-lg font-bold">BridgeEd</span>
+      </div>
+
+      <div class="hidden md:flex items-center gap-6">
+        <button class="nav-btn text-sm font-medium" data-page="landing">Landing</button>
+        <button class="nav-btn text-sm font-medium" data-page="home">Home</button>
+        <button class="nav-btn text-sm font-medium" data-page="dashboard">Dashboard</button>
+        <button class="nav-btn text-sm font-medium" data-page="learn">Learn</button>
+        <button class="nav-btn text-sm font-medium" data-page="settings">Settings</button>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <select id="language-selector" class="input-field bg-transparent text-white text-sm px-3 py-1 rounded" aria-label="Language">
+          <option value="en">English</option>
+          <option value="yo">Yoruba</option>
+          <option value="ha">Hausa</option>
+          <option value="ig">Igbo</option>
+          <option value="pcm">Pidgin</option>
+        </select>
+
+        <button id="contrastToggle" class="icon-btn" title="Toggle high contrast">
+          <i data-lucide="contrast"></i>
+        </button>
+
+        <button id="fontToggle" class="icon-btn" title="Increase font size">
+          <i data-lucide="zoom-in"></i>
+        </button>
+
+        <!-- Mobile menu button -->
+        <button id="mobileMenuBtn" class="md:hidden icon-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden border-t border-white/6 bg-slate-900/80">
+      <div class="flex flex-col px-4 py-3 gap-2">
+        <button class="nav-btn text-left" data-page="landing">Landing</button>
+        <button class="nav-btn text-left" data-page="home">Home</button>
+        <button class="nav-btn text-left" data-page="dashboard">Dashboard</button>
+        <button class="nav-btn text-left" data-page="learn">Learn</button>
+        <button class="nav-btn text-left" data-page="settings">Settings</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- App container: pages get injected into #content-area -->
+  <div id="app-root" class="min-h-screen pt-20 pb-16">
+    <main id="content-area" class="max-w-5xl mx-auto px-4"></main>
+  </div>
+
+  <!-- JS files -->
+  <script src="js/state.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    // ensure lucide icons render for initial and dynamically added icons
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.lucide && typeof lucide.createIcons === 'function') lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
+
+
+
+
